@@ -212,18 +212,33 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOs-5K-9cb">
+                                <rect key="frame" x="20" y="76" width="374" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O60-li-wVr">
+                                <rect key="frame" x="40" y="862" width="334" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="COm-jA-NyQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="O60-li-wVr" secondAttribute="trailing" constant="20" id="37i-dn-WOI"/>
                             <constraint firstItem="f0R-u0-u2b" firstAttribute="leading" secondItem="COm-jA-NyQ" secondAttribute="leading" constant="20" id="3b7-zq-5Ga"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="O60-li-wVr" secondAttribute="bottom" constant="20" id="7SX-XZ-mDm"/>
+                            <constraint firstItem="COm-jA-NyQ" firstAttribute="trailing" secondItem="VOs-5K-9cb" secondAttribute="trailing" constant="20" id="A3F-a9-6wo"/>
                             <constraint firstItem="COm-jA-NyQ" firstAttribute="trailing" secondItem="aQY-D6-lrx" secondAttribute="trailing" constant="20" id="EgT-Bj-fbv"/>
                             <constraint firstItem="f0R-u0-u2b" firstAttribute="centerY" secondItem="alo-EJ-iaN" secondAttribute="centerY" id="HPK-x9-0xH"/>
                             <constraint firstItem="COm-jA-NyQ" firstAttribute="trailing" secondItem="f0R-u0-u2b" secondAttribute="trailing" constant="20" id="KfO-PO-aKW"/>
                             <constraint firstItem="aQY-D6-lrx" firstAttribute="leading" secondItem="COm-jA-NyQ" secondAttribute="leading" constant="20" id="R4E-35-YZy"/>
+                            <constraint firstItem="VOs-5K-9cb" firstAttribute="leading" secondItem="COm-jA-NyQ" secondAttribute="leading" constant="20" id="Ulb-II-mhS"/>
                             <constraint firstItem="COm-jA-NyQ" firstAttribute="trailing" secondItem="cIY-Iw-lWP" secondAttribute="trailing" constant="20" id="WG8-l7-BaH"/>
                             <constraint firstItem="cIY-Iw-lWP" firstAttribute="centerY" secondItem="alo-EJ-iaN" secondAttribute="centerY" id="fLC-Qu-lPs"/>
                             <constraint firstItem="aQY-D6-lrx" firstAttribute="centerY" secondItem="alo-EJ-iaN" secondAttribute="centerY" id="mSf-uC-j77"/>
+                            <constraint firstItem="VOs-5K-9cb" firstAttribute="top" secondItem="COm-jA-NyQ" secondAttribute="top" constant="20" id="qy5-yP-I8j"/>
+                            <constraint firstItem="O60-li-wVr" firstAttribute="leading" secondItem="alo-EJ-iaN" secondAttribute="leadingMargin" constant="20" id="r05-02-yqH"/>
                             <constraint firstItem="cIY-Iw-lWP" firstAttribute="leading" secondItem="COm-jA-NyQ" secondAttribute="leading" constant="20" id="zDU-ml-3aw"/>
                         </constraints>
                     </view>
