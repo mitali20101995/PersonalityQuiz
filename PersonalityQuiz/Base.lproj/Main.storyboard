@@ -95,6 +95,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOs-5K-9cb">
+                                <rect key="frame" x="20" y="76" width="374" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cIY-Iw-lWP">
                                 <rect key="frame" x="20" y="344.33333333333331" width="374" height="197.33333333333331"/>
                                 <subviews>
@@ -181,12 +187,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeT-RJ-8IK">
-                                <rect key="frame" x="138" y="589" width="139" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aQY-D6-lrx">
                                 <rect key="frame" x="20" y="408" width="374" height="70.333333333333314"/>
                                 <subviews>
@@ -212,12 +212,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOs-5K-9cb">
-                                <rect key="frame" x="20" y="76" width="374" height="38.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeT-RJ-8IK">
+                                <rect key="frame" x="138" y="589" width="139" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O60-li-wVr">
                                 <rect key="frame" x="40" y="862" width="334" height="4"/>
                             </progressView>
@@ -244,6 +244,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ivb-Vd-dXa"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="da4-on-dXb" id="c0g-ir-mgv"/>
+                        <outlet property="multiLabel2" destination="huT-g4-HoZ" id="Ue9-FO-20H"/>
+                        <outlet property="multiLabel3" destination="SPk-iJ-3Wp" id="nbm-A6-r6b"/>
+                        <outlet property="multiLabel4" destination="LRN-dq-515" id="2mr-tf-JIR"/>
+                        <outlet property="multipleStackView" destination="f0R-u0-u2b" id="99l-Dc-vZK"/>
+                        <outlet property="questionProgressView" destination="O60-li-wVr" id="KQn-od-s60"/>
+                        <outlet property="questionlabel" destination="VOs-5K-9cb" id="6fW-Fi-jev"/>
+                        <outlet property="rangedLabel1" destination="eDA-Qe-1Mr" id="eSd-eI-KCa"/>
+                        <outlet property="rangedLabel2" destination="R22-fA-VQ9" id="tY0-ye-8IL"/>
+                        <outlet property="rangedStackView" destination="aQY-D6-lrx" id="I8d-fC-KKM"/>
+                        <outlet property="singleButton1" destination="Ify-OD-fcc" id="Ud5-CA-5bK"/>
+                        <outlet property="singleButton2" destination="qmB-6w-3cC" id="fyC-o4-O4R"/>
+                        <outlet property="singleButton3" destination="xuQ-zP-wP2" id="HXV-eB-Ao7"/>
+                        <outlet property="singleButton4" destination="GDt-pd-QnM" id="yyQ-jg-0dc"/>
+                        <outlet property="singleStackView" destination="cIY-Iw-lWP" id="UGP-ib-xLW"/>
                         <segue destination="Y5y-5T-gSw" kind="show" identifier="Results" id="8LN-O8-Nwd"/>
                     </connections>
                 </viewController>
