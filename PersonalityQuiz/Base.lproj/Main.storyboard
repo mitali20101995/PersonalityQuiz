@@ -141,16 +141,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f0R-u0-u2b">
                                 <rect key="frame" x="20" y="324" width="374" height="238.33333333333337"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-6k-2p3">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Submit Choices"/>
-                                        <connections>
-                                            <action selector="multipleAnswersButtonPressed" destination="On9-pR-Ocn" eventType="touchUpInside" id="7A6-oI-Idi"/>
-                                        </connections>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="IpZ-MN-kXd">
-                                        <rect key="frame" x="0.0" y="54.333333333333314" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da4-on-dXb">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="31"/>
@@ -164,7 +156,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="Fcl-hg-bWi">
-                                        <rect key="frame" x="0.0" y="105.33333333333331" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="51" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huT-g4-HoZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="31"/>
@@ -178,7 +170,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="hwX-Op-Bpk">
-                                        <rect key="frame" x="0.0" y="156.33333333333331" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="102" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPk-iJ-3Wp">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="31"/>
@@ -192,7 +184,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="xti-tL-cbE">
-                                        <rect key="frame" x="0.0" y="207.33333333333337" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="153" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-dq-515">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="31"/>
@@ -205,6 +197,14 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-6k-2p3">
+                                        <rect key="frame" x="0.0" y="204" width="374" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit  Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswersButtonPressed" destination="On9-pR-Ocn" eventType="touchUpInside" id="7A6-oI-Idi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aQY-D6-lrx">
@@ -233,20 +233,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4n-jf-UJl">
                                         <rect key="frame" x="0.0" y="90.333333333333314" width="374" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
                                         <connections>
                                             <action selector="rangedAnswerButtonPressed" destination="On9-pR-Ocn" eventType="touchUpInside" id="tC2-Mq-VWk"/>
-                                            <action selector="singleAnswerButtonPressed:" destination="On9-pR-Ocn" eventType="touchUpInside" id="w3g-hN-I6O"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeT-RJ-8IK">
-                                <rect key="frame" x="138" y="589" width="139" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
-                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O60-li-wVr">
                                 <rect key="frame" x="40" y="862" width="334" height="4"/>
                             </progressView>
@@ -293,7 +286,7 @@
                         <outlet property="singleButton3" destination="xuQ-zP-wP2" id="HXV-eB-Ao7"/>
                         <outlet property="singleButton4" destination="GDt-pd-QnM" id="yyQ-jg-0dc"/>
                         <outlet property="singleStackView" destination="cIY-Iw-lWP" id="UGP-ib-xLW"/>
-                        <segue destination="Y5y-5T-gSw" kind="show" identifier="Results" id="8LN-O8-Nwd"/>
+                        <segue destination="Y5y-5T-gSw" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="8LN-O8-Nwd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGr-GI-u0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
