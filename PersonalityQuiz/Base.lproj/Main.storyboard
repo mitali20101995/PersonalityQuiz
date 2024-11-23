@@ -328,10 +328,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="dQt-JH-Cpc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="N9Z-pp-VZR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="N9Z-pp-VZR">
+                            <connections>
+                                <segue destination="Xas-gz-ifm" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="nzp-YS-F77"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="3HO-Fv-T2M" id="toU-ra-21j"/>
+                        <outlet property="resultDefinitionLabel" destination="Prn-M2-klO" id="ZJ8-fk-z0O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9B-zz-LQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Xas-gz-ifm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2642.0289855072465" y="2.6785714285714284"/>
         </scene>
